@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherVault | Vigenère Cipher Tool</title>
+
+    <link rel="stylesheet" href="style.css ">
+</head>
+
+<body>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <div class="container">
+        <header>
+            <h1>CipherVault</h1>
+            <p class="subtitle">Advanced Vigenère Cipher Encryption & Decryption</p>
+        </header>
+
+        <!-- Tab Navigation -->
+         <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="key-finder">
+                <span></span> Key Finder
+            </button>
+            <button class="tab-btn" data-tab="encryption">
+                <span></span> Encryption
+            </button>
+            <button class="tab-btn" data-tab="decryption">
+                <span></span> Decryption
+            </button>
+         </nav>
+        
+        <div class="tab-content active" id="key-finder">
+            <!-- Key Finder Card -->
+            <div class="card">
+                <h2 class="card-title">🔑 Key Finder</h2>
+                <div class="input-group">
+                    <label for="cipher-text">Encrypted Text</label>
+                    <textarea id="cipher-text" placeholder="Enter encrypted text..."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="plain-text">Plain Text</label>
+                    <textarea id="plain-text" placeholder="Enter original plain text..."></textarea>
+                </div>
+                <button id="find-key-btn">
+                    <span>Find Key</span>
+                </button>
+                <div class="result" id="key-result">
+                    <div class="result-label">Generated Key:</div>
+                    <div id="key-output">-</div>
+                </div>
+            </div>
+        </div>
+            
+           <div class="tab-content" id="encryption">
+                <!-- Encryption Card -->
+                <div class="card">
+                    <h2 class="card-title">🔒 Encryption</h2>
+                    <div class="input-group">
+                        <label for="encrypt-plain">Plain Text</label>
+                        <textarea id="encrypt-plain" placeholder="Enter text to encrypt..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="encrypt-key">Encryption Key</label>
+                        <input type="text" id="encrypt-key" placeholder="Enter encryption key...">
+                    </div>
+                    <button id="encrypt-btn">
+                        <span>Encrypt</span>
+                    </button>
+                    <div class="result" id="encrypt-result">
+                        <div class="result-label">Encrypted Text:</div>
+                        <div id="encrypt-output">-</div>
+                    </div>
+                </div>
+           </div>
+            
+            <div class="tab-content" id="decryption">
+                <!-- Decryption Card -->
+                <div class="card">
+                    <h2 class="card-title">🔓 Decryption</h2>
+                    <div class="input-group">
+                        <label for="decrypt-cipher">Encrypted Text</label>
+                        <textarea id="decrypt-cipher" placeholder="Enter text to decrypt..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="decrypt-key">Decryption Key</label>
+                        <input type="text" id="decrypt-key" placeholder="Enter decryption key...">
+                    </div>
+                    <button id="decrypt-btn">
+                        <span>Decrypt</span>
+                    </button>
+                    <div class="result" id="decrypt-result">
+                        <div class="result-label">Decrypted Text:</div>
+                        <div id="decrypt-output">-</div>
+                    </div>
+                </div>
+            </div>
+        
+        <footer>
+            <p>CipherVault &copy; 2025 | Secure Vigenère Cipher Implementation</p>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

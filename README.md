@@ -1,6 +1,6 @@
 # CipherVault - Vigenère Cipher Tool
 
-![CipherVault Banner]()
+![CipherVault Banner](https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZW5jcnlwdGlvbnxlbnwwfHwwfHx8MA%3D%3D)
 
 ## Project Summary
 - The Vigenère Cipher Vault is an interactive web application designed to not only perform standard Vigenère encryption and decryption but also to serve as a powerful cipher identification and key validation utility. By testing the relationship between a known plaintext and its corresponding ciphertext, the tool can definitively determine if the Vigenère cipher was used and, if successful, generate a validated key for immediate use in decrypting other messages.

@@ -5,7 +5,7 @@
 ## Project Summary
 - The Vigenère Cipher Vault is an interactive web application designed to not only perform standard Vigenère encryption and decryption but also to serve as a powerful cipher identification and key validation utility. By testing the relationship between a known plaintext and its corresponding ciphertext, the tool can definitively determine if the Vigenère cipher was used and, if successful, generate a validated key for immediate use in decrypting other messages.
 
-## ADOUT
+## About This Application
 ## Cryptographic Verification Methodology
 ### *Key Validation & Cipher Identification*
 - A modern, web-based implementation of the Vigenère cipher with an interface for encryption, decryption, and key derivation. This cipherVault implements an advanced cryptographic verification system that distinguishes Vigenère cipher encryption from other encryption methods through a sophisticated key validation process
